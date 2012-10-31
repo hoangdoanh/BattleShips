@@ -3,11 +3,11 @@
 //  ScenesAndLayers
 //
 
-#import "FirstScene.h"
-#import "LoadingScene.h"
 #import "MenuScene.h"
+//#import "OtherScene.h"
 
-@implementation FirstScene
+
+@implementation MenuScene
 
 +(id) scene
 {
@@ -15,7 +15,7 @@
 	CCLOG(@"%@: %@", NSStringFromSelector(_cmd), self);
 	
 	CCScene* scene = [CCScene node];
-	FirstScene* layer = [FirstScene node];
+	MenuScene* layer = [MenuScene node];
 	[scene addChild:layer];
 	return scene;
 }
@@ -28,7 +28,7 @@
 		CGSize size = [[CCDirector sharedDirector] winSize];
         
 		//Creating welcome label1------------------------------------------------
-        CCLabelTTF* lbWelcome1 = [CCLabelTTF labelWithString:@"Welcome to battle ships" fontName:@"Arial" fontSize:26];
+        CCLabelTTF* lbWelcome1 = [CCLabelTTF labelWithString:@"Welcome to Menu Scene" fontName:@"Arial" fontSize:26];
 		lbWelcome1.color = ccGREEN;
 		
 		lbWelcome1.position = CGPointMake(size.width / 2, size.height / 2+80);
@@ -42,7 +42,7 @@
 		lbWelcome2.position = CGPointMake(size.width / 2, size.height / 2+40);
 		[self addChild:lbWelcome2];
 		
-        
+
 		//[OtherScene simulateLongLoadingTime];
 		
 		self.isTouchEnabled = YES;
@@ -62,8 +62,6 @@
 {
 	//CCTransitionSlideInB* transition = [CCTransitionSlideInB transitionWithDuration:3 scene:[OtherScene scene]];
 	//[[CCDirector sharedDirector] replaceScene:transition];
-	CCScene* newScene = [LoadingScene sceneWithTargetScene:TargetMenuScene];
-	[[CCDirector sharedDirector] replaceScene:newScene];
 }
 
 -(void) onEnter

@@ -122,6 +122,8 @@
 		48016621163EE7CD00960D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48016620163EE7CD00960D5A /* AppDelegate.m */; };
 		48016624163EE7CD00960D5A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48016623163EE7CD00960D5A /* RootViewController.m */; };
 		48016635163EE87300960D5A /* FirstScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 48016634163EE87300960D5A /* FirstScene.m */; };
+		488B4EC016403BA7005C2A20 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 488B4EBF16403BA7005C2A20 /* LoadingScene.m */; };
+		488B4EC416403E0A005C2A20 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 488B4EC316403E0A005C2A20 /* MenuScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -360,6 +362,10 @@
 		48016628163EE7CD00960D5A /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		48016633163EE87300960D5A /* FirstScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScene.h; sourceTree = "<group>"; };
 		48016634163EE87300960D5A /* FirstScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScene.m; sourceTree = "<group>"; };
+		488B4EBE16403BA7005C2A20 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
+		488B4EBF16403BA7005C2A20 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
+		488B4EC216403E0A005C2A20 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		488B4EC316403E0A005C2A20 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -760,6 +766,10 @@
 		48016632163EE86200960D5A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				488B4EC216403E0A005C2A20 /* MenuScene.h */,
+				488B4EC316403E0A005C2A20 /* MenuScene.m */,
+				488B4EBE16403BA7005C2A20 /* LoadingScene.h */,
+				488B4EBF16403BA7005C2A20 /* LoadingScene.m */,
 				48016633163EE87300960D5A /* FirstScene.h */,
 				48016634163EE87300960D5A /* FirstScene.m */,
 			);
@@ -933,6 +943,8 @@
 				48016621163EE7CD00960D5A /* AppDelegate.m in Sources */,
 				48016624163EE7CD00960D5A /* RootViewController.m in Sources */,
 				48016635163EE87300960D5A /* FirstScene.m in Sources */,
+				488B4EC016403BA7005C2A20 /* LoadingScene.m in Sources */,
+				488B4EC416403E0A005C2A20 /* MenuScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,6 +1042,7 @@
 				4801662D163EE7CD00960D5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
